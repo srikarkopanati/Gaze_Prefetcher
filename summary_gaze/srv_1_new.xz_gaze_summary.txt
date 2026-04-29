@@ -1,0 +1,13 @@
+==============================
+Trace: srv_1_new.xz_gaze.txt
+==============================
+IPC: sec)
+
+L1D Hits: 
+L1D Misses: 
+L1D Miss Rate: 0
+
+Prefetch Filled: 48516
+Prefetch Useful: 3141
+Prefetch Useless: Accuracy:
+Prefetch Accuracy: 

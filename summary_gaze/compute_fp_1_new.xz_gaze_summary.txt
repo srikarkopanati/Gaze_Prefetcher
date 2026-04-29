@@ -1,0 +1,13 @@
+==============================
+Trace: compute_fp_1_new.xz_gaze.txt
+==============================
+IPC: sec)
+
+L1D Hits: 
+L1D Misses: 
+L1D Miss Rate: 0
+
+Prefetch Filled: 501330
+Prefetch Useful: 104504
+Prefetch Useless: Accuracy:
+Prefetch Accuracy: 

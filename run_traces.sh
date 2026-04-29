@@ -1,49 +1,45 @@
 #!/bin/bash
 
-TRACE_DIR=~/traces
-BIN=./bin/champsim_8core_gaze
+TRACE_DIR=/Users/srikarkopanati/Documents/project/Gaze-Spatial-Prefetcher/traces
+BIN=./ChampSim/bin/champsim_1core_no_prefetch
 
-WARMUP=200000000
-SIM=200000000
+WARMUP=20000000
+SIM=50000000
 
-mkdir -p results
+mkdir -p results_no_prefetech
 
 TRACES=(
 
-# ---- compute (3) ----
+# ---- compute (1) ----
 compute_fp_1_new.xz
-compute_fp_6_new.xz
-compute_int_11_new.xz
 
-# ---- ligra (3) ----
+# ---- ligra (1) ----
 ligra_BFS.com-lj.ungraph.gcc_6.3.0_O3.drop_500M.length_250M.champsimtrace.xz
-ligra_PageRank.com-lj.ungraph.gcc_6.3.0_O3.drop_500M.length_250M.champsimtrace.xz
-ligra_BellmanFord.com-lj.ungraph.gcc_6.3.0_O3.drop_4000M.length_250M.champsimtrace.xz
 
-# ---- gap (2) ----
+# ---- gap (1) ----
 gap.bfs.twitter-10B.champsimtrace.xz
-gap.pr.web-10B.champsimtrace.xz
 
-# ---- parsec (2) ----
+# ---- parsec (1) ----
 parsec_2.1.facesim.simlarge.prebuilt.drop_1500M.length_250M.champsimtrace.xz
-parsec_2.1.streamcluster.simlarge.prebuilt.drop_4750M.length_250M.champsimtrace.xz
 
-# ---- srv (3) ----
+# ---- srv (1) ----
 srv_1_new.xz
-srv_27_new.xz
-srv_60_new.xz
 
 )
 
 for trace in "${TRACES[@]}"; do
+    echo "=============================="
     echo "Running $trace"
+    echo "=============================="
+
+    START=$(date +%s)
 
     $BIN \
       --warmup_instructions $WARMUP \
       --simulation_instructions $SIM \
       --trace $TRACE_DIR/$trace \
-      > results/${trace}.txt
+      > results_no_prefetech/${trace}_no.txt 2>&1
 
-    echo "Finished $trace"
+    END=$(date +%s)
+    echo "Finished $trace in $((END-START)) seconds"
 done
-

@@ -1,0 +1,70 @@
+========================================
+Benchmark: compute_fp_1_new.xz_gaze.txt
+----------------------------------------
+Throughput (IPC): 1.25873
+L1 Hits: 2085
+L1 Misses: 1553
+Prefetch Useful: 104504
+Prefetch Useless: 62567
+Accuracy: 62.5507 %
+Cache Pollution: 37.45 %
+Coverage: 67.29 %
+Power: Not available in ChampSim
+Energy: Not available in ChampSim
+
+========================================
+Benchmark: gap.bfs.twitter-10B.champsimtrace.xz_gaze.txt
+----------------------------------------
+Throughput (IPC): 1.82154
+L1 Hits: 20
+L1 Misses: 49
+Prefetch Useful: 643
+Prefetch Useless: 909
+Accuracy: 41.4305 %
+Cache Pollution: 58.57 %
+Coverage: 13.12 %
+Power: Not available in ChampSim
+Energy: Not available in ChampSim
+
+========================================
+Benchmark: ligra_BFS.com-lj.ungraph.gcc_6.3.0_O3.drop_500M.length_250M.champsimtrace.xz_gaze.txt
+----------------------------------------
+Throughput (IPC): 1.78353
+L1 Hits: 0
+L1 Misses: 0
+Prefetch Useful: 0
+Prefetch Useless: 0
+Accuracy: 0 %
+Cache Pollution: 0 %
+Coverage: 0 %
+Power: Not available in ChampSim
+Energy: Not available in ChampSim
+
+========================================
+Benchmark: parsec_2.1.facesim.simlarge.prebuilt.drop_1500M.length_250M.champsimtrace.xz_gaze.txt
+----------------------------------------
+Throughput (IPC): 1.26594
+L1 Hits: 3095835
+L1 Misses: 251
+Prefetch Useful: 1638
+Prefetch Useless: 2861
+Accuracy: 36.4081 %
+Cache Pollution: 63.59 %
+Coverage: 6.53 %
+Power: Not available in ChampSim
+Energy: Not available in ChampSim
+
+========================================
+Benchmark: srv_1_new.xz_gaze.txt
+----------------------------------------
+Throughput (IPC): 0.995632
+L1 Hits: 2544009
+L1 Misses: 1163413
+Prefetch Useful: 3141
+Prefetch Useless: 34901
+Accuracy: 8.25667 %
+Cache Pollution: 91.74 %
+Coverage: 0.00 %
+Power: Not available in ChampSim
+Energy: Not available in ChampSim
+
