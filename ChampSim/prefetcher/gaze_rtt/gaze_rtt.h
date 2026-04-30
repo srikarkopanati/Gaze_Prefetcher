@@ -1,5 +1,5 @@
-#ifndef GAZE_RTT_H
-#define GAZE_RTT_H
+#ifndef GAZE_H
+#define GAZE_H
 
 /*
  * Gaze into the Pattern: Characterizing Spatial Patterns with Internal Temporal Correlations for Hardware Prefetching
@@ -23,7 +23,7 @@
 #include <random>
 #include <deque>
 
-namespace gaze_rtt {
+namespace gaze {
 
 #define __region_offset(block_num) (block_num & REGION_OFFSET_MASK)
 
@@ -323,6 +323,6 @@ public:
     void log();
 };
 
-} // namespace gaze_rtt
+} // namespace gaze
 
 #endif
